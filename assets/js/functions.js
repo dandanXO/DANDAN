@@ -45,7 +45,7 @@ function workLoad () {
 			
 			var newFolder = $this.data('folder');
 			var spinner= "<div class='loader'>Loading...</div>";
-			var	newHtml = 'assets/img/work/'+newFolder+'.html';
+			var	newHtml = 'work/'+newFolder+'.html';
 			
 		$('.project-load').html(spinner).load(newHtml);	
 		$('.project-title').text(newTitle);
