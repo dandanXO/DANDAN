@@ -1,0 +1,42 @@
+<section class="alt-section section-contact" id="section-contact">
+	<h3 id="contact">Contact</h3>
+	<div class="social-links">
+	{% for link in site.data.settings.social %}
+		<a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
+	{% endfor %}
+	</div>
+<hr class="bar">
+<a class="biglink" href="mailto:{{ site.data.settings.email }}" "email me">{{ site.data.settings.email }}</a>
+
+
+
+
+	
+</section>
+
+<section>
+	<h3>Let's Work together</h3>
+
+	
+		
+	
+	<form action="https://formspree.io/{{ site.data.settings.email }}"
+      method="POST">
+      <div class="contact-info-group">
+      <label><span>Your Name</span>
+    <input type="text" name="name"></label>
+
+     <label><span>Your Email</span>
+    <input type="email" name="_replyto"></label>
+ </div>
+
+
+      <label><span>Tell me What You Want to Say</span>
+    <textarea name="tmessage"></textarea></label>
+	
+	<div class="submit-warp">
+    <input type="submit" value="Send">
+	</div>
+   </form>
+
+</section>
