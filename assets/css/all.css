@@ -955,7 +955,7 @@ footer .lockup {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background: url(/assets/img/face.jpg);
+    background: url(assets/img/face.jpg);
     order: 3; }
   .face-lockup [class^="icon-"] {
     height: 110px;
